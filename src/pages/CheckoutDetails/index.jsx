@@ -1,7 +1,6 @@
 import React from "react";
+import CheckoutDetails from "../../components/CheckoutDetails";
 
-const CheckoutDetails = () => {
-  return <div>CheckoutDetails</div>;
-};
+const CheckoutDetailsPage = () => <CheckoutDetails />;
 
-export default CheckoutDetails;
+export default CheckoutDetailsPage;

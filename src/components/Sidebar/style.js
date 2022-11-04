@@ -6,7 +6,10 @@ background-color: var(--backgroundPrimary);
 border-top-right-radius: 30px;
 max-width: 263px;
 width: 100%;
-height: calc(100vh - 70px);
+height: 100vh;
+padding-top: 30px;
+position: sticky;
+top: 0;
 `
 export const SidebarMenu = styled.ul`
 display: flex;
@@ -19,6 +22,7 @@ export const SidebarItem = styled.li`
 margin-bottom: 26px;
 margin-right: 1px;
 a{
+   transition: all .2s ease-in;
    display: flex;
    align-items: center;
    font-family: 'Gilroy-Regular';
@@ -35,11 +39,19 @@ a{
    order: 1;
    flex-grow: 0;
    padding: 14px 0px 16px 30px;
+   border-radius:30px 0px 0px 30px;
+   &:hover{
+      background-color: #fff;
+      color: var(--colorPrimary);
+      
+      svg path{
+         fill: var(--colorPrimary);
+      } 
+   }
 }
 .active{
    background-color: #fff;
    color: var(--colorPrimary);
-   border-radius:30px 0px 0px 30px;
    
    svg path{
       fill: var(--colorPrimary);

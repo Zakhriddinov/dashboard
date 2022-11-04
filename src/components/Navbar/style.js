@@ -22,6 +22,7 @@ width: 100%;
 margin: 0 auto;
 ${common}
 justify-content: space-between;
+
 `
 // navbar logo style
 export const NavLogo = styled(Link)`
