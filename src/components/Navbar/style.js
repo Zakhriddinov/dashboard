@@ -18,8 +18,6 @@ line-height: 19px;
 export const Nav = styled.nav``
 
 export const NavContainer = styled.div`
-max-width: var(--width);
-width: 100%;
 margin: 0 auto;
 ${common}
 justify-content: space-between;
