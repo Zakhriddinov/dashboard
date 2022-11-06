@@ -67,4 +67,40 @@ justify-content: center;
 border-radius: 50%;
 cursor: pointer;
 `
+export const AddToCartWidth = styled.div`
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: absolute;
+padding: 10px 18px;
+top: -20px;
+right: 16px;
+max-width: 267px;
+width: 100%;
+height: 60px;
+background-color: #FF647C;
+border-radius: 40px;
+cursor: pointer;
+p{
+   font-family: 'Gilroy-Semibold';
+   font-style: normal;
+   font-weight: 600;
+   color: #fff !important;
+   font-size: 17px;
+   line-height: 20px;
+}
+.count{
+   width: 40px;
+   height: 40px;
+   background-color: #fff;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   p{
+      color: #FF647C !important;
+      line-height: 21px;
+   }
+}
+`
 AddToCart.Bag = styled(bag)``

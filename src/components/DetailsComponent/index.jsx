@@ -3,7 +3,7 @@ import { Product } from "../../context/products";
 import DetailsInfo from "../DetailsInfo";
 import Stock from "../Stock";
 import Title from "../Title";
-import { AddToCart, Button, Container } from "./style";
+import { AddToCart, AddToCartWidth, Button, Container } from "./style";
 
 const DetailsComponent = ({ details }) => {
   const {
@@ -15,7 +15,13 @@ const DetailsComponent = ({ details }) => {
     <>
       <Container>
         {cart.length > 0 ? (
-          ""
+          <AddToCartWidth>
+            <AddToCart.Bag />
+            <p>Перейти в корзину</p>
+            <div className="count">
+              <p>{cart.length}</p>
+            </div>
+          </AddToCartWidth>
         ) : (
           <AddToCart>
             <AddToCart.Bag />
