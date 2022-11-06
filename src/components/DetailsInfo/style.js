@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Regular, SemiBold } from "../../utils/font";
 
 const Container = styled.div`
 display: flex;
@@ -8,7 +9,8 @@ const CaruselProduct = styled.div`
 width: 480px;
 height: 380px;
 border-radius: 16px;
-background-color: #F3F5F8;
+background-color: var(--backgroundSilver);
+position: relative;
 `
 const Info = styled.div`
 max-width: 481px;
@@ -23,20 +25,16 @@ margin-left: 20px;
       display: flex;
       align-items: center;
       span{
-         font-family: 'Gilroy-Regular';
-         font-style: normal;
-         font-weight: 400;
+        ${Regular}
          font-size: 14px;
          line-height: 16px;
          letter-spacing: -0.3px;
-         color: #BBC2D0;
+         color: var(--colorSilver);
          margin-left: 8px;
       }
    }
    .bgPrice{
-      font-family: 'Gilroy-Semibold';
-      font-style: normal;
-      font-weight: 600;
+      ${SemiBold}
       font-size: 16px;
       line-height: 19px;
       text-align: right;
@@ -45,7 +43,7 @@ margin-left: 20px;
       text-align: center;
       width: 108px;
       height: 23px;
-      background: #FF647C;
+      background: var(--backgroundRed);
       border-radius: 2px;
    }
 }
@@ -56,7 +54,7 @@ h6{
    font-weight: 400;
    font-size: 16px;
    line-height: 19px;
-   color: #262728;
+   color: var(--colorBlack);
    margin: 8px 0px 21px 0px;
 }
 
@@ -71,9 +69,17 @@ a{
       font-size: 16px;
       line-height: 19px;
       letter-spacing: 0.01em;
-      color: #00C48C;
+      color: var(--colorGreen);
    }
 }
 `
-
-export { Container, CaruselProduct, Info }
+const Stock = styled.div`
+position: absolute;
+display: grid;
+grid-template-rows: auto auto auto auto;
+flex-direction: column;
+z-index: 1;
+grid-gap: 6px;
+margin: 20px;
+`
+export { Container, CaruselProduct, Info, Stock }

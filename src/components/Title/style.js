@@ -1,10 +1,9 @@
 import styled from "styled-components";
+import { SemiBold } from "../../utils/font";
 
 export const TitleStyle = styled.h2`
-font-family: 'Gilroy-Semibold';
-font-style: normal;
-font-weight: 600;
+${SemiBold}
 font-size: 22px;
 line-height: 26px;
-color: #3D639D;
+color: var(--colorPrimary);
 `

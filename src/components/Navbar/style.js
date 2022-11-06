@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 import { ReactComponent as notification } from '../../assets/icons/notification.svg'
 import { ReactComponent as account } from '../../assets/icons/personal-information.svg'
+import { SemiBold } from "../../utils/font";
 
 // duplicate style
 const common = css`
@@ -52,9 +53,7 @@ position: relative;
    right: -5px;
    
    // font style
-   font-family: "Gilroy-SemiBold";
-   font-style: normal;
-   font-weight: 600;
+   ${SemiBold}
    font-size: 10px; 
    line-height: 12px;
    color: #FFFFFF;

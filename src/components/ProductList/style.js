@@ -1,14 +1,13 @@
 import styled from "styled-components";
+import { SemiBold } from "../../utils/font";
 
 const Container = styled.div`
 h2{
-   font-family: 'Gilroy-Semibold';
-   font-style: normal;
-   font-weight: 600;
+   ${SemiBold}
    font-size: 16px;
    line-height: 19px;
    letter-spacing: -0.3px;
-   color: #262728;
+   color: var(--colorBlack);
    margin: 30px 0px 20px 0px;
 }
 `

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as bag } from '../../assets/icons/checkout.svg'
+import { Medium, Regular, SemiBold } from "../../utils/font";
 export const Container = styled.div`
 width: 1041px;
 height: 980px;
@@ -12,26 +13,22 @@ position: relative;
    width: 100%;
    height: 1px;
    opacity: 0.4;
-   background-color: #BBC2D0;
+   background-color: var(--colorSilver);
    margin: 20px 0;
 }
 p{
-   font-family: 'Gilroy-Regular';
-   font-style: normal;
-   font-weight: 400;
+  ${Regular}
    font-size: 16px !important;
    line-height: 19px;
-   color: #BBC2D0;
+   color: var(--colorSilver);
    margin-bottom: ${({ size }) => size ? "8px" : 0} !important;
 }
 h4{
-   font-family: 'Gilroy-Medium';
-   font-style: normal;
-   font-weight: 400;
+   ${Medium}
    font-size: 16px;
    line-height: 19px;
    letter-spacing: -0.3px;
-   color: #262728;
+   color: var(--colorBlack);
 }
 `
 
@@ -44,9 +41,7 @@ cursor: pointer;
 border: none;
 outline: none;
 
-font-family: 'Gilroy-Semibold';
-font-style: normal;
-font-weight: 600;
+${SemiBold}
 font-size: 16px;
 line-height: 19px;
 text-align: center;
@@ -60,7 +55,7 @@ top: -20px;
 right: 16px;
 width: 60px;
 height: 60px;
-background: #FF647C;
+background: var(--backgroundRed);
 display: flex;
 align-items: center;
 justify-content: center;
@@ -78,13 +73,11 @@ right: 16px;
 max-width: 267px;
 width: 100%;
 height: 60px;
-background-color: #FF647C;
+background-color: var(--backgroundRed);
 border-radius: 40px;
 cursor: pointer;
 p{
-   font-family: 'Gilroy-Semibold';
-   font-style: normal;
-   font-weight: 600;
+  ${SemiBold}
    color: #fff !important;
    font-size: 17px;
    line-height: 20px;
@@ -98,7 +91,7 @@ p{
    align-items: center;
    justify-content: center;
    p{
-      color: #FF647C !important;
+      color: var(--backgroundRed) !important;
       line-height: 21px;
    }
 }

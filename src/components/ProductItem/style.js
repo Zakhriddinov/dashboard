@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Medium, Regular, SemiBold } from "../../utils/font";
 
 const Cart = styled.div`
 width: 192px;
@@ -11,18 +12,14 @@ padding: 12px;
 const Info = styled.div`
 margin-top: 6px;
 a{
-   font-family: 'Gilroy-Regular';
-   font-style: normal;
-   font-weight: 400;
+   ${Regular}
    font-size: 15px;
    line-height: 17px;
    letter-spacing: -0.3px;
    color: var(--colorBlack);
 }
 h4{
-   font-family: 'Gilroy-Medium';
-   font-style: normal;
-   font-weight: 500;
+   ${Medium}
    font-size: 15px;
    line-height: 18px;
    letter-spacing: -0.3px;
@@ -39,9 +36,7 @@ h4{
       height: 20px;
       
       // font style
-      font-family: 'Gilroy-Semibold';
-      font-style: normal;
-      font-weight: 600;
+      ${SemiBold}
       font-size: 13px;
       line-height: 16px;
       letter-spacing: -0.3px;
@@ -49,9 +44,7 @@ h4{
       text-align: center;
    }
    span{
-      font-family: 'Gilroy-Regular';
-      font-style: normal;
-      font-weight: 400;
+     ${Regular}
       font-size: 11px;
       line-height: 13px;
       letter-spacing: -0.3px;
@@ -68,10 +61,18 @@ border-radius: 6px;
 display: flex;
 align-items: center;
 justify-content: center;
+position: relative;
 img{
    max-width: 105px;
    max-height: 142px;
 }
 `
-
-export { Cart, Info, ImageBox }
+const Stock = styled.div`
+position: absolute;
+top: 12px;
+left: 6px;
+display: grid;
+grid-template-rows: auto auto auto auto;
+grid-gap: 6px;
+`
+export { Cart, Info, ImageBox, Stock }

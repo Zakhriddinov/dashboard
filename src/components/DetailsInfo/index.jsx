@@ -1,15 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CaruselProduct, Container, Info } from "./style";
+import { CaruselProduct, Container, Info, Stock } from "./style";
 import { ReactComponent as Next } from "../../assets/icons/next.svg";
 import Tabs from "../Tabs";
 import Carousel from "../Carousel";
+import { Icon } from "../../utils/stockIcon";
 const DetailsInfo = ({ details }) => {
-  const { price, image, toPrice, type, internet, system } = details;
+  const { price, image, toPrice, type, internet, system, stock } = details;
   return (
     <>
       <Container>
         <CaruselProduct>
+          <Stock>
+            {stock?.trade ? (
+              <Icon type="trade" width>
+                <Icon.Trade />
+              </Icon>
+            ) : null}
+            {stock?.bundle && (
+              <Icon type="bundle" width>
+                <Icon.Bundle />
+              </Icon>
+            )}
+            {stock?.dicount && (
+              <Icon type="discount" width>
+                <Icon.Discount />
+              </Icon>
+            )}
+            {stock?.discount1 && (
+              <Icon type="discount1" width>
+                <Icon.Discount1 />
+              </Icon>
+            )}
+          </Stock>
           <Carousel image={image} />
         </CaruselProduct>
         <Info>

@@ -20,7 +20,7 @@ img{
     width: 6px;
     height: 6px;
     margin: 0 6px;
-    background-color: #BBC2D0;
+    background-color: var(--colorSilver);
     border-radius: 50%;
 }
 
@@ -29,6 +29,6 @@ img{
 }
 .slick-active button{
     width: 6px !important;
-    background-color: #3D639D !important;
+    background-color: var(--backgroundPrimary) !important;
 }
 `

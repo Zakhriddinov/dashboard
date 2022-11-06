@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as search } from '../../assets/icons/search.svg';
+import { Regular } from "../../utils/font";
 
 const Container = styled.div`
 margin-top: 20px;
@@ -15,16 +16,14 @@ label{
       height: 100%;
       width: 100%;
       // font style
-      font-family: 'Gilroy-Regular';
-      font-style: normal;
-      font-weight: 400;
+      ${Regular}
       font-size: 16px;
       line-height: 19px;
       letter-spacing: -0.3px;
-      color: #BBC2D0;
+      color: var(--colorSilver);
       padding-left: 20px;
       &::placeholder{
-         color: #BBC2D0;
+         color: var(--colorSilver);
       }
    }
 }

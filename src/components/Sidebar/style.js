@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Regular } from "../../utils/font";
 
 
 export const Container = styled.div`
@@ -25,9 +26,7 @@ a{
    transition: all .2s ease-in;
    display: flex;
    align-items: center;
-   font-family: 'Gilroy-Regular';
-   font-style: normal;
-   font-weight: 500;
+   ${Regular}
    font-size: 16px;
    line-height: 19px;
    /* identical to box height */

@@ -8,7 +8,13 @@ const product = [
       internet: '2G, 3G, 4G (LTE), 5G',
       system: 'Samsung',
       image: "/samsung.png",
-      category: 'samsung'
+      category: 'samsung',
+      stock: {
+         trade: true,
+         bundle: true,
+         dicount: true,
+         discount1: true
+      }
    },
    {
       id: 2,
@@ -19,7 +25,13 @@ const product = [
       internet: '2G, 3G, 4G (LTE), 5G',
       system: 'iOS 14',
       image: "/iphone.png",
-      category: 'iphone'
+      category: 'iphone',
+      stock: {
+         trade: true,
+         bundle: false,
+         dicount: false,
+         discount1: false
+      }
    },
    {
       id: 3,
@@ -30,7 +42,13 @@ const product = [
       internet: '2G, 3G, 4G (LTE), 5G',
       system: 'iOS 14',
       image: "/airpods.png",
-      category: 'iphone'
+      category: 'iphone',
+      stock: {
+         trade: true,
+         bundle: false,
+         dicount: false,
+         discount1: false
+      }
    },
    {
       id: 4,
@@ -41,7 +59,13 @@ const product = [
       internet: '2G, 3G, 4G (LTE), 5G',
       system: 'iOS 14',
       image: "/zed.png",
-      category: 'iphone'
+      category: 'iphone',
+      stock: {
+         trade: false,
+         bundle: true,
+         dicount: true,
+         discount1: false
+      }
    },
    {
       id: 5,
@@ -52,7 +76,13 @@ const product = [
       internet: '2G, 3G, 4G (LTE), 5G',
       system: 'iOS 14',
       image: "/iphone.png",
-      category: 'iphone'
+      category: 'iphone',
+      stock: {
+         trade: true,
+         bundle: false,
+         dicount: false,
+         discount1: false
+      }
    },
    {
       id: 6,
@@ -63,7 +93,13 @@ const product = [
       internet: '2G, 3G, 4G (LTE), 5G',
       system: 'Samsung',
       image: "/samsung.png",
-      category: 'samsung'
+      category: 'samsung',
+      stock: {
+         trade: true,
+         bundle: true,
+         dicount: true,
+         discount1: true
+      }
    },
    {
       id: 7,
@@ -74,7 +110,13 @@ const product = [
       internet: '2G, 3G, 4G (LTE), 5G',
       system: 'iOS 14',
       image: "/iphone.png",
-      category: 'iphone'
+      category: 'iphone',
+      stock: {
+         trade: true,
+         bundle: false,
+         dicount: false,
+         discount1: false
+      }
    },
    {
       id: 8,
@@ -85,7 +127,13 @@ const product = [
       internet: '2G, 3G, 4G (LTE), 5G',
       system: 'iOS 14',
       image: "/airpods.png",
-      category: 'iphone'
+      category: 'iphone',
+      stock: {
+         trade: true,
+         bundle: false,
+         dicount: false,
+         discount1: false
+      }
    },
    {
       id: 9,
@@ -96,7 +144,13 @@ const product = [
       internet: '2G, 3G, 4G (LTE), 5G',
       system: 'iOS 14',
       image: "/zed.png",
-      category: 'iphone'
+      category: 'iphone',
+      stock: {
+         trade: false,
+         bundle: true,
+         dicount: true,
+         discount1: false
+      }
    },
    {
       id: 10,
@@ -107,7 +161,13 @@ const product = [
       internet: '2G, 3G, 4G (LTE), 5G',
       system: 'Samsung',
       image: "/samsung.png",
-      category: 'samsung'
+      category: 'samsung',
+      stock: {
+         trade: true,
+         bundle: true,
+         dicount: true,
+         discount1: true
+      }
    }
 ]
 

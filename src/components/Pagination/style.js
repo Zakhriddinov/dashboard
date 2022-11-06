@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { Pagination } from 'antd';
+import { Medium } from "../../utils/font";
 const PaginationContainer = styled(Pagination)`
 display: flex;
 align-items: center;
@@ -7,7 +8,7 @@ justify-content: center;
 margin-top:30px ;
 position: relative;
 .ant-pagination-item-active{
-   background-color: #00C48C !important;
+   background-color: var(--backgroundGreen) !important;
    border-radius: 10px;
    width: 36px;
    height: 36px;
@@ -28,20 +29,18 @@ position: relative;
    background-color: transparent;
    border-radius: 10px;
    border: 0;
-   font-family: 'Gilroy-Medium';
-   font-style: normal;
-   font-weight: 500;
+   ${Medium}
    font-size: 16px;
    line-height: 19px;
    letter-spacing: 0.01em;
-   color: #262728;
+   color: var(--colorBlack);
    padding-top: 8px;
    a{
       display: flex;
       align-items: center;
       justify-content: center;
       &:hover{
-            color: #262728;
+            color: var(--colorBlack);
       }
    }
 }

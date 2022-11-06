@@ -1,5 +1,6 @@
 import React from "react";
-import { Card, CheckboxStyle, Container, Icon, Wrapper } from "./style";
+import { Icon } from "../../utils/stockIcon";
+import { Card, CheckboxStyle, Container, Wrapper } from "./style";
 
 const Stock = () => {
   return (

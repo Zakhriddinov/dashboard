@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { Medium, Regular } from "../../utils/font";
 
 export const Container = styled.div`
-background: #F3F5F8;
+background: var(--backgroundSilver);
 border-radius: 6px;
 max-width: 1097px;
 width: 100%;
@@ -10,26 +11,21 @@ margin-top: 20px;
 margin-bottom: 16px;
 padding: 20px 28px;
 p{
-   font-family: 'Gilroy-Regular';
-   font-style: normal;
-   font-weight: 400;
+   ${Regular}
    font-size: 12px;
    line-height: 14px;
-   color: #BBC2D0;
+   color: var(--colorSilver);
    flex: none;
    order: 0;
    flex-grow: 0;
    margin-bottom: 30px;
    span{
-      font-family: 'Gilroy-Medium';
-   font-style: normal;
-   font-weight: 500;
-   font-size: 12px;
-   line-height: 14px;
+     ${Medium}
+      font-size: 12px;
+      line-height: 14px;
 
-   /* Primary color - green */
-
-   color: #00C48C;
+      /* Primary color - green */
+      color: var(--colorGreen);
    }
 }
 `
